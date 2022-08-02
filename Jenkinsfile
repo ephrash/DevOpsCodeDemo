@@ -40,7 +40,7 @@ pipeline{
                }
            }	
           }
-           stage('MetricCheck'){
+           stage('MetricCheck or code coverage'){
               
               steps{
                   sh 'mvn cobertura:cobertura -Dcobertura.report.format=xml'
